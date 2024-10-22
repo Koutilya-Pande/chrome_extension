@@ -1,0 +1,65 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px; /* Increased width */
+    width: 90%; /* Responsive width */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none; /* No background */
+    border: none; /* No border */
+    color: grey; /* Grey color */
+    font-size: 20px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: font-weight 0.2s; /* Smooth transition for font weight */
+}
+
+.close-button:hover {
+    font-weight: bold; /* Bold on hover */
+    background: none; /* Ensure no background on hover */
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Space above the footer */
+}
+
+.cancel-button, .download-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: #ccc; /* Gray background for cancel */
+}
+
+.download-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+}
+
+.download-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

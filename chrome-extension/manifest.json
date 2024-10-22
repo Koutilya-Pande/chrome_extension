@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "CoverMe",
+  "version": "1.0",
+  "description": "Generate cover letters using AI",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs" 
+  ],
+  "host_permissions": [
+    "http://localhost:5000/*",
+    "http://localhost:3000/*"  
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html"
+  },
+  "background": {
+    "service_worker": "src/background/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content/content.js"]
+    }
+  ]
+}
