@@ -1,0 +1,280 @@
+.profile-container {
+    min-height: 100vh;
+    background-color: #f3f4f6;
+}
+
+.profile-header {
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.header-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    height: 2rem;
+    width: 2rem;
+    color: #06b6d4;
+}
+
+.logo-text {
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #111827;
+}
+
+.header-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: #6b7280;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #374151;
+}
+
+.nav-link.active {
+    color: #06b6d4;
+    font-weight: 500;
+}
+
+.profile-main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.profile-content {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.left-column {
+    flex: 1; /* This will represent 1 part */
+    max-width: 25%; /* Set max width to 25% for 1/4 */
+}
+
+.right-column {
+    flex: 3; /* This will represent 3 parts */
+    max-width: 75%; /* Set max width to 75% for 3/4 */
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure items are vertically centered */
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 0; /* Ensure no margin below the header */
+}
+
+.card-title-icon {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    gap: 0.5rem; /* Space between icon and title */
+}
+
+.card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111827;
+    margin-top: 0; /* Remove any top margin */
+    margin-bottom: 0; /* Remove bottom margin to reduce space */
+}
+
+.card-content {
+    padding: 0.5rem; /* Reduced padding inside card content */
+}
+
+.user-info {
+    text-align: center;
+    padding: 1rem; /* Reduced padding from 1.5rem to 1rem */
+}
+
+.user-info .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem; /* Reduced padding from 1rem to 0.5rem */
+}
+
+.user-info form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.user-info .submit-button {
+    margin-top: 1rem;
+}
+
+.profile-picture {
+    width: 5rem; /* Reduced size from 6rem to 5rem */
+    height: 5rem; /* Reduced size from 6rem to 5rem */
+    background-color: #06b6d4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem; /* Reduced font size from 2rem to 1.5rem */
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Reduced margin from 1rem to 0.5rem */
+}
+
+.user-info h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem; /* Reduced margin from 0.5rem to 0.25rem */
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6b7280;
+}
+
+.icon-button:hover {
+    color: #374151;
+}
+
+.field-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+    gap: 0.125rem; /* Reduced gap between field items */
+}
+
+.field-content svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #23b8dd;
+}
+
+.profile-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+textarea.profile-input {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.message {
+    text-align: center;
+    margin-top: 1rem;
+    color: #059669;
+}
+
+@media (max-width: 1024px) {
+    .profile-content {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+}
+
+.contact-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem; /* Reduced gap between inputs */
+    margin-bottom: 0.5rem; /* Reduced margin below the contact section */
+}
+
+.contact-inputs .profile-input {
+    width: 100%;
+}
+
+.field-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+    gap: 0.5rem; /* Reduced gap between field items */
+}
+
+.field-content > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.portfolio-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem; /* Reduced gap between portfolio items */
+    margin-bottom: 0.5rem; /* Reduced margin below the portfolio section */
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px; /* Reduced margin between input groups */
+}
+
+.input-group svg {
+    margin-right: 4px; /* Reduced space between icon and text */
+    flex-shrink: 0;
+}
+
+.input-group span {
+    flex: 1;
+    word-break: break-word;
+    margin-left: 4px; /* Reduced margin on the left of the text */
+}
+
+.profile-input {
+    flex: 1;
+    margin-left: 8px;
+}
+
+/* Ensure the content is inline for view mode */
+.field-content .input-group {
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Maintain vertical layout for edit mode */
+.contact-inputs .input-group,
+.portfolio-inputs .input-group {
+    flex-direction: row;
+    align-items: center;
+}
+
+/* For edit mode */
+.contact-inputs,
+.portfolio-inputs {
+    display: flex;
+    flex-direction: column;
+}

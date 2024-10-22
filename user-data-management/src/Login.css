@@ -1,0 +1,126 @@
+.login-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-side {
+    flex: 1;
+    background-color: #0f172a;
+    color: white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.left-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.subtext {
+    font-size: 1rem;
+    color: #94a3b8;
+}
+
+.right-side {
+    flex: 1;
+    background-color: #f8fafc;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.submit-button {
+    background-color: #0f172a;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #1e293b;
+}
+
+.message {
+    text-align: center;
+    margin-top: 1rem;
+    color: #ef4444;
+}
+
+.signup-text {
+    font-size: 0.875rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #475569;
+}
+
+.register-link {
+    color: #2563eb;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #475569;
+    margin-top: 2rem;
+}
