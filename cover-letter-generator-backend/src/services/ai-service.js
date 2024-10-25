@@ -68,7 +68,7 @@ export async function generateCoverLetter(jobDescription, resumeContent) {
         // Create the message object to send to the API
         const userMessage = {
             role: 'user',
-            content: `Write a cover letter for the following job description:\n\n${jobDescription}\n\nUsing the following resume as reference:\n\n${JSON.stringify(resumeContent)}\n\nCover Letter. The cover should follow the below format ${clf}. Whatever you are generating in bold put it in between **text**.`,
+            content: `Write a cover letter for the following job description:\n\n${jobDescription}\n\nUsing the following resume as reference:\n\n${JSON.stringify(resumeContent)}\n\nCover Letter. The cover should follow the below format ${clf}. Whatever you are generating in bold put it in between **text**. The tone should be professional, enthusiastic, and confident. Highlight key skills and experiences from the resume that align with the job requirements. Focus on showcasing how my qualifications and accomplishments make me an ideal fit for the role. Use strong action verbs and results-oriented language. Emphasize my passion for the role and how I can contribute to the company's goals.`,
         };
 
         // Define the data to send in the request body
