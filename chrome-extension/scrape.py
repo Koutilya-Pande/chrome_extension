@@ -4,7 +4,7 @@ from scrapegraphai.graphs import SmartScraperGraph
 # Define the configuration for the scraping pipeline
 graph_config = {
     "llm": {
-        "api_key": "sk-Do7ilFLrsfTSAdVhkt4116oYbSr46TwoUag7ktBJwNT3BlbkFJErHaIFzyoMQF2NWTqrfnylLAmvXLr9lbW6PRMUsAEA",  # Replace with your actual OpenAI API key
+        "api_key": "",  # Replace with your actual OpenAI API key
         "model": "openai/gpt-4o-mini",
     },
     "verbose": True,
